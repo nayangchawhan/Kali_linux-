@@ -1,0 +1,26 @@
+TorNet, commonly referred to as the Tor network, is a decentralized network that anonymizes internet traffic to enhance privacy and security.
+In Kali Linux, Tor can be installed and configured to route internet traffic through multiple relays, hiding your IP address and encrypting your data,
+which is valuable for privacy-focused activities, penetration testing, and ethical hacking. Here’s how you can get started with Tor in Kali Linux:
+
+#1. Installing Tor
+Open a terminal and update your repositories:
+**sudo apt update**
+Then, install Tor:
+**sudo apt install tor**
+To start the Tor service, use:
+**sudo systemctl start tor**
+to check Status 
+**sudo systemctl status tor**
+#use dnsleaktest.com for testing dns leak (ip)
+
+after this go to firefox setting 
+then select network setting 
+select manula proxy configuration 
+SOCKS Hosts 127.0.0.1   
+port 9050
+check Proxy DNS when using SOCKS.v5
+then **ok**
+
+come to command prommt again 
+**sudo tornet --interval 5 --count 0**
+**sudo tornet --interval time_in_sec --count 0**
