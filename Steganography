@@ -1,0 +1,49 @@
+Steganography is defined as which involves caching of secret information. This word is derived from two Greek words- ‘stegos’ meaning ‘to cover’ and ‘grayfia’, meaning ‘writing’, thus translating to ‘covered writing’, or ‘hidden writing’. The sensitive information will also be uprooted from the ordinary train or communication at its discovery. With the help of Steganography, we can hide any digital thing like textbook, image, videotape, etc behind a medium.
+
+Different Types of Steganography
+Text Steganography
+Text Steganography is defined as a type of steganography which involves caching dispatches or secret information within a textbook document or other textual data. In this system, we try to hide secret data with the help of each letter of the word. It is challenging to describe especially when the variations or changes made are subtle.
+
+Image Steganography
+Image Steganography is defined as a type of steganography which involves caching dispatches or secret information within digital images. It is achieved by making changes in the pixels of the image to render the information. It is generally used for watermarking, covert communication, brand protection, etc.
+
+Audio Steganography
+Audio Steganography is defined as a type of steganography which involves caching dispatches or secret information within audio lines. The ideal behind using this fashion is to hide information in such a way that people cannot notice it when they hear the audio. It's generally used for digital rights operation in audio lines.
+
+Video Steganography
+Video Steganography is defined as a type of steganography which involves caching dispatches or secret information within digital videotape lines. The ideal way to use Video Steganography is to detect secret information in a videotape in such a way that normal people won't notice it.
+
+Network or Protocol Steganography
+Network or Protocol Steganography is defined as a type of steganography which involves caching dispatches or secret information within network protocols or dispatches. It tries to hide secret information in the usual inflow of internet or network exertion so that nothing can describe it.
+
+Advantages of Steganography
+It offers better security for data sharing and communication.
+It's veritably important delicate to descry. It can only be detected by the receiver party.
+It can apply through colorful means like images, audio, videotape, textbook,etc.
+It plays a vital part in securing the content of the communication.
+It offers double subcaste of protection, first being the train itself and second the data decoded.
+With the help of Steganography advanced functional agency can communicate intimately.
+
+**exciquite this in kali**
+**Method 1:** Using Steghide
+Steghide is a command-line tool that allows you to hide text messages in images.
+
+**Step 1: Install Steghide (if not installed)**
+
+**sudo apt update**
+**sudo apt install steghide -y**
+
+**Step 2: Hide Text Inside an Image**
+Use the following command to embed a text file (secret.txt) inside an image (image.jpg):
+
+**steghide embed -cf image.jpg -ef secret.txt**
+
+-cf image.jpg → Cover file (the image where data is hidden).
+-ef secret.txt → Embedded file (text file to hide).
+You'll be asked to set a passphrase.
+
+**Step 3: Extract the Hidden Text**
+To extract the hidden text from the image:
+
+**steghide extract -sf image.jpg**
+You'll need to enter the passphrase used during embedding.
